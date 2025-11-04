@@ -1,20 +1,23 @@
-body {
+html, body {
     font-family: sans-serif;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
 }
 .logo {
-    width: 130px;
-    height: 130px;
+    aspect-ratio: 1 / 1;
+    width: clamp(100px, 30%, 200px);
     background-color: #A20025;
     color: white;
     font-weight: bold;
     border-radius: 20px;
     text-align: center;
     align-content: center;
-    font-size: 1.5em;
+    font-size: clamp(20px, 6vw, 40px);
     margin-bottom: 20px;
     border: 1px solid #6F0000;
     user-select: none;
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 1px 1px 5px grey;
     &:hover {
         border-color: white;
     }
@@ -37,19 +40,19 @@ body {
         background-color: #FF9292;
     }
 }
-section {
+.toolbar {
+    display: flex;
+    box-shadow: 1px 1px 10px grey;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.toolbar section {
     display: grid;
     place-items: center;
     width: 100%;    
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-}
-.toolbar {
-    display: flex;
-    box-shadow: 1px 1px 10px grey;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
 }
 .center {
     display: block;
@@ -61,11 +64,11 @@ section {
     background-color: #A20025;
     color: white;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: clamp(20px, 4vw, 30px);
     font-weight: bold;
     padding: 7px;
-    width: 200px;
-    box-shadow: 1px 1px 10px grey;
+    width: clamp(200px, 40%, 40%);
+    box-shadow: 1px 1px 5px grey;
     &:hover {
         border-color: white;
     }
@@ -74,7 +77,8 @@ section {
     }
 }
 .container {
-    width: fit-content;
+    background-color: red;
+    width: 75%;
     display: block;
     justify-content: left;
 }
@@ -84,4 +88,19 @@ a {
 input {
     width: 190px;
     height: 1.8em;
+}
+.wrapper-main {
+    width: 800px;
+    background-color: white;
+    min-height: 100vh;
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 800px) {
+    .wrapper-main {
+        width: 100%;
+        margin: 0;
+    }
 }
