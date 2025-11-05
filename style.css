@@ -60,18 +60,77 @@ html, body {
 .toolbar div {
     display: grid;
     grid-template-columns: 65% 30%;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-}
-img {
-    aspect-ratio: 1 / 1;
-    width: 8vw;
 }
 .center {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+.searchBar{
+    margin-right: auto;
+    margin-left:auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.searchBar input {
+    box-sizing: border-box;
+    height: 100%;
+    vertical-align: top;
+    width: 80%;
+    font-size: 5vw;
+    align-self: center;
+}
+.searchBar img {
+    aspect-ratio: 1 / 1;
+    width: 6vw;
+}
+.report-flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.report-item {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 50% 50%;
+    border: 2px solid black;
+    border-radius: 2px;
+    aspect-ratio: 3 / 1;
+    margin-bottom: 1vh;
+    padding: 5px;
+}
+.report-item button {
+    width: 75%;
+    justify-self: end;
+    border: 1px solid #6F0000;
+    background-color: #A20025;
+    color: white;
+    border-radius: 10px;
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: bold;
+    &:hover {
+        border-color: white;
+    }
+    &:active {
+        background-color: #FF9292;
+    }
+}
+.report-item h3 {
+    text-align: right;
+}
+.report-item > * {
+    margin: 0;
+    height: 100%;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 .button {
     border: 1px solid #6F0000;
