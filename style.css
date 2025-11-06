@@ -13,7 +13,7 @@ html, body {
     border-radius: 20px;
     text-align: center;
     align-content: center;
-    font-size: clamp(20px, 6vw, 40px);
+    font-size: clamp(30px, 6vw, 40px);
     margin-bottom: 20px;
     border: 1px solid #6F0000;
     user-select: none;
@@ -22,12 +22,13 @@ html, body {
         border-color: white;
     }
     &:active {
-        background-color: #FF9292;
+        background-color: #FF9293;
     }
 }
 .home {
     border: 1px solid #6F0000;
     background-color: #A20025;
+    font-size: clamp(13px, 4vw, 40px);
     color: white;
     border-radius: 10px;
     font-weight: bold;
@@ -55,7 +56,23 @@ html, body {
     width: 100%;    
     text-align: center;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: clamp(20px, 6vw, 40px);
+}
+.toolbar-3 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    box-shadow: 1px 1px 10px grey;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.toolbar-3 section {
+    display: grid;
+    place-items: center;
+    width: 100%;    
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(20px, 6vw, 40px);
 }
 .toolbar div {
     display: grid;
@@ -79,12 +96,12 @@ html, body {
     height: 100%;
     vertical-align: top;
     width: 80%;
-    font-size: 5vw;
+    font-size: clamp(20px, 5vw, 40px);
     align-self: center;
 }
 .searchBar img {
     aspect-ratio: 1 / 1;
-    width: 6vw;
+    width: clamp(25px, 5vw, 60px); 
 }
 .report-flexbox {
     display: flex;
@@ -134,13 +151,14 @@ html, body {
 }
 .button {
     border: 1px solid #6F0000;
+    box-sizing: border-box;
     background-color: #A20025;
     color: white;
     border-radius: 10px;
     font-size: clamp(20px, 4vw, 30px);
     font-weight: bold;
     min-height: 6vh;
-    width: 400px;
+    width: clamp(200px, 50vw, 300px); 
     padding: 7px;
     box-shadow: 1px 1px 5px grey;
     &:hover {
@@ -151,17 +169,33 @@ html, body {
     }
 }
 .container {
-    background-color: red;
-    width: 75%;
+    width: fit-content;
     display: block;
     justify-content: left;
+}
+.status-bar {
+    display: block;
+    text-align: center;
+}
+.status-bar > * {
+    font-size: clamp(20px, 5vw, 30px);
+    display: inline-block;
+}
+.status-light {
+    width: clamp(15px, 5vw, 40px);
+    margin-right: 2vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    background-color: yellow;
+    box-shadow: 1px 1px 10px grey;
 }
 a {
     font-size: 13px;
 }
 input {
-    width: 190px;
-    height: 1.8em;
+    aspect-ratio: 1 / .12;
+    width: clamp(200px, 50vw, 300px); 
+    font-size: clamp(15px, 4vw, 20px);
 }
 .wrapper-main {
     width: 800px;
@@ -174,11 +208,8 @@ input {
 }
 @media (max-width: 800px) {
     .wrapper-main {
+        min-width:300px;
         width: 100%;
         margin: 0;
-    }
-    .button {
-        min-width: 200px;
-        width: 70%;
     }
 }

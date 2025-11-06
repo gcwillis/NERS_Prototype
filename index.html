@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"/>
-    <title>Ners Home</title>
+    <link href="style.css" rel="stylesheet" />
+    <title>Login</title>
 </head>
 <body>
-    <div class="wrapper-main">
-        <div class="center logo">N.E.R.S</div>
-        <button onClick="document.location='login.html'" class="button center">File Crime Report</button>
+    <div class="wrapper-main" >
+        <div onclick="document.location='index.html'" class="center logo">N.E.R.S</div>
+        <input class="center" placeholder="Email" type="text" />
         <br />
-        <button onClick="document.location='report-history.html'" class="button center">Track Report</button>
+        <div class="container center">
+            <input class="center" placeholder="Password" type="password" />
+            <a href="">Forgot Password?</a>
+        </div>
         <br />
-        <button class="button center">Safety Alerts</button>
-        <br />
-        <button class="button center">Incident Search</button>
-        <br />
-        <button class="button center">Anonymous Tip</button>
+        <div class="container center">
+            <button onClick="document.location='home.html'" class="button center">Log In</button>
+            <a href="">Create Account</a>
+        </div>
     </div>
 </body>
 </html>
