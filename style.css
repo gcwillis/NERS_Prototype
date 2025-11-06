@@ -144,6 +144,24 @@ html, body {
     margin: 0;
     height: 100%;
 }
+.message-box {
+    padding-top: 10px;
+    vertical-align: top;
+    border: 1px solid black;
+    border-radius: 3px;
+    aspect-ratio: 3 / 1;
+    margin-bottom: 1vh;
+    padding: 5px;
+    box-shadow: 1px 1px 5px grey;
+}
+.message-box > * {
+    font-size: clamp(15px, 4vw, 30px);
+    resize: none;
+    width: 95%;
+    height: 90%;
+    border: none;
+    margin: 0;
+}
 .sticky {
     position: sticky;
     top: 0;
@@ -190,6 +208,10 @@ html, body {
     border-radius: 100%;
     background-color: yellow;
     box-shadow: 1px 1px 10px grey;
+}
+img {
+    aspect-ratio: 1 / 1;
+    width: 350px;
 }
 a {
     font-size: 13px;
