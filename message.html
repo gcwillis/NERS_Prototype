@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
-    <title>Sample Report</title>
+    <title>Send Message</title>
 </head>
 <body>
     <div class="wrapper-main">
+
         <div class="toolbar-3">
             <button class="home" onclick="document.location='index.html'">N.E.R.S</button>
-            <section>Sample Report</section>
-            <button class="home" onclick="document.location='report-history.html'">Back</button>
+            <section>Report Message</section>
+            <button class="home" onclick="document.location='sample-report.html'">Back</button>
         </div>
         <br />
-        <div class="status-bar center">
-            <div class="status-light"></div>
-            <h3>Under Review</h3>
-        </div>
         <div class="report-flexbox center">
+            <h3>Message  from officer:</h3>
             <div class="report-item">
-                <h2>New message from officer</h2>
-                <button onclick="document.location='message.html'">View</button>
+                <h4>Describe what was stolen from you.</h4>
+            </div>
+            <h3>Reply:</h3>
+            <div class="report-item">
+                <input type="text" />
+                <button onclick="document.location='confirmation.html'">Reply</button>
             </div>
         </div>
     </div>

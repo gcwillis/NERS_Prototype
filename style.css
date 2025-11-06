@@ -113,11 +113,12 @@ html, body {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 50% 50%;
-    border: 2px solid black;
-    border-radius: 2px;
+    border: 1px solid black;
+    border-radius: 3px;
     aspect-ratio: 3 / 1;
     margin-bottom: 1vh;
     padding: 5px;
+    box-shadow: 1px 1px 5px grey;
 }
 .report-item button {
     width: 75%;
@@ -128,6 +129,7 @@ html, body {
     border-radius: 10px;
     font-size: clamp(20px, 4vw, 30px);
     font-weight: bold;
+    box-shadow: 1px 1px 5px grey;
     &:hover {
         border-color: white;
     }
