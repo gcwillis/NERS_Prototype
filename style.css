@@ -76,7 +76,7 @@ html, body {
 }
 .toolbar div {
     display: grid;
-    grid-template-columns: 65% 30%;
+    erid-template-columns: 65% 30%;
 }
 .center {
     display: block;
@@ -169,6 +169,22 @@ html, body {
     border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
+.sticky-next {
+    position: fixed;
+    width: inherit;
+    min-width: 300px;
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    bottom: 0;
+    background-color: white;
+    text-align: right;
+    box-shadow: 1px 1px 5px grey;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
 .button {
     border: 1px solid #6F0000;
     box-sizing: border-box;
@@ -221,10 +237,28 @@ input {
     width: clamp(200px, 50vw, 300px); 
     font-size: clamp(15px, 4vw, 20px);
 }
+
+input[type="radio"] {
+    width: clamp(15px, 3vw, 25px);
+    height: clamp(15px, 3vw, 25px);
+    margin: 0 10px;
+    vertical-align: middle;
+    accent-color: #A20025;
+}
+
+label {
+    font-size: clamp(15px, 4vw, 20px);
+    vertical-align: middle;
+    display: inline-block;
+    margin: 5px 0;
+}
 .wrapper-main {
     width: 800px;
+    overflow: visible;
+    position: relative;
+    min-height: 150vh;
+    height: 100%;
     background-color: white;
-    min-height: 100vh;
     padding-top: 20px;
     display: block;
     margin-left: auto;

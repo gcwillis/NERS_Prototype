@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Select Incident Type</title>
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="toolbar">
+            <button class="home" onclick="document.location='home.html'">N.E.R.S</button>
+            <section>Incident Type</section>
+        </div>
+        <br />
+        <div class="center report-flexbox">
+            <div class="report-type">
+                <input id="theftbutton" type="radio" />
+                <label for="theftbutton">Theft</label>
+
+                <!-- Example sub-types for Theft -->
+                <div class="subtypes">
+                    <div class="subtype-option">
+                        <input id="theft-bike" type="radio" name="theft-subtype" />
+                        <label for="theft-bike">Bicycle</label>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="theft-auto" type="radio" name="theft-subtype" />
+                        <label for="theft-auto">Automobile</label>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="theft-shop" type="radio" name="theft-subtype" />
+                        <label for="theft-shop">Shoplifting</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-next">
+            <button class="button" onclick="document.location='photo-upload.html'">Next</button>
+        </div>
+    </div>
