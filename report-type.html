@@ -15,26 +15,103 @@
         <br />
         <div class="center report-flexbox">
             <div class="report-type">
-                <input id="theftbutton" type="radio" />
+                <input id="theftbutton" type="radio" name="incident-type" />
                 <label for="theftbutton">Theft</label>
 
-                <!-- Example sub-types for Theft -->
                 <div class="subtypes">
                     <div class="subtype-option">
                         <input id="theft-bike" type="radio" name="theft-subtype" />
                         <label for="theft-bike">Bicycle</label>
+                        <div class="subtype-definition">Theft of any bicycle, e-bike, or similar personal transportation device</div>
                     </div>
                     <div class="subtype-option">
                         <input id="theft-auto" type="radio" name="theft-subtype" />
                         <label for="theft-auto">Automobile</label>
+                        <div class="subtype-definition">Theft of cars, motorcycles, or other motor vehicles</div>
                     </div>
                     <div class="subtype-option">
                         <input id="theft-shop" type="radio" name="theft-subtype" />
                         <label for="theft-shop">Shoplifting</label>
+                        <div class="subtype-definition">Theft of merchandise from a retail establishment</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="report-type">
+                <input id="assaultbutton" type="radio" name="incident-type" />
+                <label for="assaultbutton">Assault</label>
+
+                <div class="subtypes">
+                    <div class="subtype-option">
+                        <input id="assault-physical" type="radio" name="assault-subtype" />
+                        <label for="assault-physical">Physical</label>
+                        <div class="subtype-definition">Direct physical contact or attempted physical harm to another person</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="assault-verbal" type="radio" name="assault-subtype" />
+                        <label for="assault-verbal">Verbal</label>
+                        <div class="subtype-definition">Threats, intimidation, or aggressive verbal behavior</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="assault-weapon" type="radio" name="assault-subtype" />
+                        <label for="assault-weapon">Weapon Involved</label>
+                        <div class="subtype-definition">Assault involving any type of weapon or dangerous object</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="report-type">
+                <input id="vandalismbutton" type="radio" name="incident-type" />
+                <label for="vandalismbutton">Vandalism</label>
+
+                <div class="subtypes">
+                    <div class="subtype-option">
+                        <input id="vandalism-graffiti" type="radio" name="vandalism-subtype" />
+                        <label for="vandalism-graffiti">Graffiti</label>
+                        <div class="subtype-definition">Unauthorized writing, drawing, or painting on property</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="vandalism-property" type="radio" name="vandalism-subtype" />
+                        <label for="vandalism-property">Property Damage</label>
+                        <div class="subtype-definition">Intentional destruction or defacement of property</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="vandalism-vehicle" type="radio" name="vandalism-subtype" />
+                        <label for="vandalism-vehicle">Vehicle Damage</label>
+                        <div class="subtype-definition">Specific damage to automobiles, motorcycles, or bicycles</div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="report-type">
+                <input id="suspiciousbutton" type="radio" name="incident-type" />
+                <label for="suspiciousbutton">Suspicious Activity</label>
+
+                <div class="subtypes">
+                    <div class="subtype-option">
+                        <input id="suspicious-person" type="radio" name="suspicious-subtype" />
+                        <label for="suspicious-person">Suspicious Person</label>
+                        <div class="subtype-definition">Individual(s) exhibiting concerning or unusual behavior</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="suspicious-vehicle" type="radio" name="suspicious-subtype" />
+                        <label for="suspicious-vehicle">Suspicious Vehicle</label>
+                        <div class="subtype-definition">Vehicle(s) observed engaging in unusual or concerning activity</div>
+                    </div>
+                    <div class="subtype-option">
+                        <input id="suspicious-activity" type="radio" name="suspicious-subtype" />
+                        <label for="suspicious-activity">Other Activity</label>
+                        <div class="subtype-definition">Other unusual circumstances or situations causing concern</div>
                     </div>
                 </div>
             </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div class="sticky-next">
             <button class="button" onclick="document.location='photo-upload.html'">Next</button>
         </div>

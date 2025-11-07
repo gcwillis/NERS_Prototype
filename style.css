@@ -76,7 +76,7 @@ html, body {
 }
 .toolbar div {
     display: grid;
-    erid-template-columns: 65% 30%;
+    grid-template-columns: 65% 30%;
 }
 .center {
     display: block;
@@ -239,18 +239,40 @@ input {
 }
 
 input[type="radio"] {
-    width: clamp(15px, 3vw, 25px);
-    height: clamp(15px, 3vw, 25px);
+    width: clamp(20px, 3vw, 30px);
+    height: clamp(20px, 3vw, 30px);
     margin: 0 10px;
     vertical-align: middle;
     accent-color: #A20025;
 }
 
 label {
-    font-size: clamp(15px, 4vw, 20px);
+    font-size: clamp(18px, 4vw, 24px);
     vertical-align: middle;
     display: inline-block;
     margin: 5px 0;
+}
+.report-type {
+    padding: 20px;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 5px;
+}
+.subtypes {
+    margin-left: 30px;
+}
+
+.subtype-option {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+
+.subtype-definition {
+    color: #666;
+    font-size: clamp(16px, 3vw, 20px);
+    margin-left: 40px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    font-style: italic;
 }
 .wrapper-main {
     width: 800px;
