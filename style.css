@@ -263,6 +263,7 @@ label {
     padding: 20px;
     box-shadow: 1px 1px 10px grey;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 .subtypes {
     margin-left: 30px;
