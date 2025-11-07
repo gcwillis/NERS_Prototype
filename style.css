@@ -171,19 +171,26 @@ html, body {
 }
 .sticky-next {
     position: fixed;
-    width: inherit;
+    width: 800px;
     min-width: 300px;
-    max-width: 800px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 999;
     bottom: 0;
     background-color: white;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     box-shadow: 1px 1px 5px grey;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+@media (max-width: 800px) {
+    .sticky-next {
+        width: 100%;
+        margin: 0;
+    }
 }
 .button {
     border: 1px solid #6F0000;
@@ -291,5 +298,116 @@ label {
         min-width:300px;
         width: 100%;
         margin: 0;
+    }
+}
+
+.report-details-form {
+    width: clamp(300px, 80%, 800px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.report-details-form label {
+    font-size: clamp(24px, 3vw, 32px);
+    display: block;
+    margin-bottom: 8px;
+    align-self: center;
+    width: clamp(280px, 90%, 600px);
+    font-weight: 600;
+    color: #333;
+}
+
+.report-details-form input,
+.report-details-form textarea {
+    width: clamp(280px, 90%, 600px);
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: clamp(22px, 2.5vw, 28px);
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-self: center;
+    color: #333;
+    background-color: #fff;
+}
+
+.report-details-form input::placeholder,
+.report-details-form textarea::placeholder {
+    color: #666;
+    opacity: 1;
+    font-size: clamp(20px, 2.5vw, 26px);
+}
+
+.report-details-form {
+    width: clamp(300px, 80%, 800px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.report-details-form label {
+    font-size: clamp(16px, 3vw, 24px);
+    display: block;
+    margin-bottom: 5px;
+    align-self: center;
+    width: clamp(280px, 90%, 600px);
+}
+
+.report-details-form input,
+.report-details-form textarea {
+    resize: none;
+    width: clamp(280px, 90%, 600px);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: clamp(14px, 2.5vw, 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.report-details-form textarea {
+    min-height: clamp(100px, 20vh, 200px);
+    resize: vertical;
+}
+
+.location-details {
+    width: clamp(280px, 90%, 600px);
+    margin: 0 auto;
+}
+
+.location-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.location-field {
+    flex: 1;
+}
+
+.location-field input {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .location-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .location-field {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .location-field:last-child {
+        margin-bottom: 0;
     }
 }

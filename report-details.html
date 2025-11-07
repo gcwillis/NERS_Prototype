@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Report Details</title>
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="toolbar-3">
+            <button class="home" onclick="document.location='home.html'">N.E.R.S</button>
+            <section>Report Details</section>
+            <button class="home" onclick="document.location='photo-upload.html'">Back</button>
+        </div>
+        <br />
+        <div class="report-flexbox">
+            <div class="report-details-form center">
+                <label for="description">Description:</label><br />
+                <textarea id="description" name="description" rows="4" cols="50" placeholder="Provide a detailed description of the incident..."></textarea><br /><br />
+
+                <div class="location-details">
+                    <label for="street">Street Address:</label><br />
+                    <input type="text" id="street" name="street" placeholder="Enter street address..." /><br /><br />
+
+                    <label for="building">Building/Room:</label><br />
+                    <input type="text" id="building" name="building" placeholder="Enter building and/or room number..." /><br /><br />
+
+                    <div class="location-row">
+                        <div class="location-field">
+                            <label for="city">City:</label><br />
+                            <input type="text" id="city" name="city" placeholder="City" />
+                        </div>
+                        <div class="location-field">
+                            <label for="state">State:</label><br />
+                            <input type="text" id="state" name="state" placeholder="State" maxlength="2" />
+                        </div>
+                        <div class="location-field">
+                            <label for="zip">ZIP Code:</label><br />
+                            <input type="text" id="zip" name="zip" placeholder="ZIP" maxlength="5" pattern="[0-9]*" />
+                        </div>
+                    </div><br />
+
+                <label for="date">Date of Incident:</label><br />
+                <input type="date" id="date" name="date" /><br /><br />
+
+                <label for="time">Time of Incident:</label><br />
+                <input type="time" id="time" name="time" /><br /><br />
+            </div>
+        </div>
+        <div class="sticky-next">
+            <div></div>
+            <button class="button" onclick="document.location='report-submitted.html'">Next</button>
+        </div>
+    </div>
+    
+</body>
+</html>
