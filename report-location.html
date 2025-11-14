@@ -10,14 +10,12 @@
     <div class="wrapper-main">
         <div class="toolbar-3">
             <button class="home" onclick="document.location='home.html'">N.E.R.S</button>
-            <section>Report Details</section>
-            <button class="home" onclick="document.location='photo-upload.html'">Back</button>
+            <section>Incident Location</section>
+            <button class="home" onclick="document.location='contact-info.html'">Back</button>
         </div>
         <br />
         <div class="report-flexbox">
             <div class="report-details-form center">
-                <label for="description">Description:</label><br />
-                <textarea id="description" name="description" rows="4" cols="50" placeholder="Provide a detailed description of the incident..."></textarea><br /><br />
 
                 <div class="location-details">
                     <label for="street">Street Address:</label><br />
@@ -41,18 +39,30 @@
                         </div>
                     </div><br />
 
-                <label for="date">Date of Incident:</label><br />
-                <input type="date" id="date" name="date" /><br /><br />
+                    <label for="landmark">Nearest Intersection/Landmark:</label><br />
+                    <input type="text" id="landmark" name="landmark" placeholder="Enter a nearby landmark..." /><br /><br />
 
-                <label for="time">Time of Incident:</label><br />
-                <input type="time" id="time" name="time" /><br /><br />
+                    <label for="date">Date of Incident:</label><br />
+                    <input type="date" id="date" name="date" /><br /><br />
+
+                    <label for="time">Time of Incident:</label><br />
+                    <input type="time" id="time" name="time" /><br /><br />
+
+                    <label for="start-time">Start Time:</label><br />
+                    <input type="time" id="start-time" name="start-time" /><br /><br />
+
+                    <label for="end-time">End Time:</label><br />
+                    <input type="time" id="end-time" name="end-time" /><br /><br />
+
+                    <label for="notes">Additional Notes:</label><br />
+                    <textarea id="notes" name="notes" rows="4" cols="50" placeholder="Enter any additional notes here..."></textarea><br /><br />
+                </div>
+            </div>
+            <div class="sticky-next">
+                <div></div>
+                <button class="button" onclick="document.location='narrative.html'">Next</button>
             </div>
         </div>
-        <div class="sticky-next">
-            <div></div>
-            <button class="button" onclick="document.location='report-submitted.html'">Next</button>
-        </div>
     </div>
-    
 </body>
 </html>

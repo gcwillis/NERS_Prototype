@@ -412,3 +412,26 @@ label {
         margin-bottom: 0;
     }
 }
+
+.tracking-number {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.tracking-number p {
+    font-size: clamp(16px, 3vw, 24px);
+    color: #333;
+    margin: 5px 0;
+}
+
+.tracking-number p:first-child {
+    font-weight: 600;
+    color: #666;
+    font-size: clamp(14px, 2.5vw, 20px);
+}
+
+.tracking-number p:last-child {
+    font-weight: bold;
+    font-size: clamp(18px, 3.5vw, 28px);
+    color: #A20025;
+}
