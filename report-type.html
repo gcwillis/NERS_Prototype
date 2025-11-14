@@ -14,106 +14,161 @@
         </div>
         <br />
         <div class="center report-flexbox">
-            <div class="report-type">
-                <input id="theftbutton" type="radio" name="incident-type" />
-                <label for="theftbutton">Theft</label>
-
-                <div class="subtypes">
-                    <div class="subtype-option">
-                        <input id="theft-bike" type="radio" name="theft-subtype" />
-                        <label for="theft-bike">Bicycle</label>
-                        <div class="subtype-definition">Theft of any bicycle, e-bike, or similar personal transportation device</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="theft-auto" type="radio" name="theft-subtype" />
-                        <label for="theft-auto">Automobile</label>
-                        <div class="subtype-definition">Theft of cars, motorcycles, or other motor vehicles</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="theft-shop" type="radio" name="theft-subtype" />
-                        <label for="theft-shop">Shoplifting</label>
-                        <div class="subtype-definition">Theft of merchandise from a retail establishment</div>
-                    </div>
+            <h2 class="incident-section-header">Motor Vehicle</h2>
+            
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.01</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
                 </div>
+                <p class="incident-description">Stopping motor vehicle when signaled by horse-drawn vehicle or rider.</p>
             </div>
-            <br />
-            <div class="report-type">
-                <input id="assaultbutton" type="radio" name="incident-type" />
-                <label for="assaultbutton">Assault</label>
 
-                <div class="subtypes">
-                    <div class="subtype-option">
-                        <input id="assault-physical" type="radio" name="assault-subtype" />
-                        <label for="assault-physical">Physical</label>
-                        <div class="subtype-definition">Direct physical contact or attempted physical harm to another person</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="assault-verbal" type="radio" name="assault-subtype" />
-                        <label for="assault-verbal">Verbal</label>
-                        <div class="subtype-definition">Threats, intimidation, or aggressive verbal behavior</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="assault-weapon" type="radio" name="assault-subtype" />
-                        <label for="assault-weapon">Weapon Involved</label>
-                        <div class="subtype-definition">Assault involving any type of weapon or dangerous object</div>
-                    </div>
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.02</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
                 </div>
+                <p class="incident-description">Stopping after accident on public roads or highways (hit-skip).</p>
             </div>
-            <br />
-            <div class="report-type">
-                <input id="vandalismbutton" type="radio" name="incident-type" />
-                <label for="vandalismbutton">Vandalism</label>
 
-                <div class="subtypes">
-                    <div class="subtype-option">
-                        <input id="vandalism-graffiti" type="radio" name="vandalism-subtype" />
-                        <label for="vandalism-graffiti">Graffiti</label>
-                        <div class="subtype-definition">Unauthorized writing, drawing, or painting on property</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="vandalism-property" type="radio" name="vandalism-subtype" />
-                        <label for="vandalism-property">Property Damage</label>
-                        <div class="subtype-definition">Intentional destruction or defacement of property</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="vandalism-vehicle" type="radio" name="vandalism-subtype" />
-                        <label for="vandalism-vehicle">Vehicle Damage</label>
-                        <div class="subtype-definition">Specific damage to automobiles, motorcycles, or bicycles</div>
-                    </div>
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.021</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
                 </div>
+                <p class="incident-description">Stopping after accident on other than public roads or highways. (parking lots, private property).</p>
             </div>
-            <br />
-            <div class="report-type">
-                <input id="suspiciousbutton" type="radio" name="incident-type" />
-                <label for="suspiciousbutton">Suspicious Activity</label>
 
-                <div class="subtypes">
-                    <div class="subtype-option">
-                        <input id="suspicious-person" type="radio" name="suspicious-subtype" />
-                        <label for="suspicious-person">Suspicious Person</label>
-                        <div class="subtype-definition">Individual(s) exhibiting concerning or unusual behavior</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="suspicious-vehicle" type="radio" name="suspicious-subtype" />
-                        <label for="suspicious-vehicle">Suspicious Vehicle</label>
-                        <div class="subtype-definition">Vehicle(s) observed engaging in unusual or concerning activity</div>
-                    </div>
-                    <div class="subtype-option">
-                        <input id="suspicious-activity" type="radio" name="suspicious-subtype" />
-                        <label for="suspicious-activity">Other Activity</label>
-                        <div class="subtype-definition">Other unusual circumstances or situations causing concern</div>
-                    </div>
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.03</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
                 </div>
+                <p class="incident-description">Stopping after accident involving damage to realty or property attached to realty (mailboxes, fences).</p>
             </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.042</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <p class="incident-description">Sale or possession of master key designed to fit more than one motor vehicle.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.05</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <p class="incident-description">Removing ignition key left in ignition switch.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 4549.08</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <p class="incident-description">Use of fictitious license plates or identification numbers.</p>
+            </div>
+
+            <h2 class="incident-section-header">Property & Public Order</h2>
+            
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.02</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Theft</h3>
+                <p class="incident-description">Taking property or service without consent includes shoplifting, package theft or minor property theft.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.03</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Unauthorized Use of Property</h3>
+                <p class="incident-description">Using another person's property (Ex. Car or Equipment) without permission, but not permanently depriving them.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.04</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Unauthorized Use of Computer, Cable, Etc.</h3>
+                <p class="incident-description">Covers hacking, unauthorized access, or misuse of electronic systems.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.31</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Forgery</h3>
+                <p class="incident-description">Creating or altering documents, checks, or IDs for fraudulent purposes.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.32</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Criminal Simulation</h3>
+                <p class="incident-description">Passing off fake items (Ex. counterfeit goods) as genuine.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2913.51</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Receiving Stolen Property</h3>
+                <p class="incident-description">Possesssing or buying property known to be stolen.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2909.07</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Criminal Mischief</h3>
+                <p class="incident-description">Tampering with property, graffiti, or minor damage without immediate danger.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2909.06</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Criminal Damaging or Endangering</h3>
+                <p class="incident-description">Damaging property (Ex. breaking windows, or damaging cars) without causing injury.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2917.21</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Telecommunications Harassment</h3>
+                <p class="incident-description">Harassing or threatening messages via phone, text, or electronic communication.</p>
+            </div>
+
+            <div class="incident-card">
+                <div class="incident-header">
+                    <span class="incident-code">ORC 2917.11</span>
+                    <input type="checkbox" name="incident-type" class="incident-checkbox" />
+                </div>
+                <h3 class="incident-name">Disorderly Conduct</h3>
+                <p class="incident-description">Minor public disturbances, noise complaints, or disruptive behavior not requiring urgent response.</p>
+            </div>
+
+            <h2 class="incident-section-header">Other Incidents</h2>
+
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div class="sticky-next">
-            <button class="button" onclick="document.querySelectorAll('input[type=radio]').forEach(radio => radio.checked = false)">Reset</button>
+            <div></div>
             <button class="button" onclick="document.location='contact-info.html'">Next</button>
         </div>
     </div>

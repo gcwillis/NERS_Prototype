@@ -435,3 +435,60 @@ label {
     font-size: clamp(18px, 3.5vw, 28px);
     color: #A20025;
 }
+
+.incident-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.incident-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.incident-code {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: #666;
+    font-weight: 500;
+}
+
+.incident-checkbox {
+    width: clamp(18px, 3vw, 24px);
+    height: clamp(18px, 3vw, 24px);
+    cursor: pointer;
+    margin-top: 2px;
+    accent-color: #A20025;
+}
+
+.incident-name {
+    color: #A20025;
+    font-size: clamp(20px, 3.5vw, 28px);
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.incident-description {
+    color: #333;
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+}
+
+.incident-section-header {
+    font-size: clamp(18px, 3.5vw, 26px);
+    color: #A20025;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A20025;
+}
