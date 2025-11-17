@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" />
     <title>Report Tracking</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('isAnonymous') === 'true') {
+                // Hide all report items for anonymous users
+                const reportItems = document.querySelectorAll('.report-item');
+                reportItems.forEach(item => {
+                    item.style.display = 'none';
+                });
+                
+                // Optionally show a message
+                const flexbox = document.querySelector('.report-flexbox');
+                if (flexbox) {
+                    const message = document.createElement('p');
+                    message.textContent = 'Report history is not available for anonymous users.';
+                    message.style.textAlign = 'center';
+                    message.style.fontSize = 'clamp(16px, 3vw, 22px)';
+                    message.style.color = '#666';
+                    message.style.padding = '20px';
+                    flexbox.appendChild(message);
+                }
+            }
+        });
+    </script>
 </head>
 <body>
     <div class="wrapper-main">
         <div class="sticky">
             <div class="toolbar">
                 <button class="home" onclick="document.location='home.html'">N.E.R.S</button>
-                <section>Report History</section>
+                <section>Report Tracking</section>
             </div>
             <br />
             <div class="searchBar">

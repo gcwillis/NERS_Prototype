@@ -18,13 +18,13 @@
         </div>
         <br />
         <div class="container center">
-            <button onClick="document.location='home.html'" class="button center">Log In</button>
+            <button onClick="sessionStorage.setItem('isAnonymous', 'false'); document.location='home.html'" class="button center">Log In</button>
             <br />
             <a href="">Create Account</a>
         </div>
         <br />
         <div class="container center">
-            <button onClick="document.location='home.html'" style="background-color: grey; border-color: black;" class="button center">Anonymous Login</button>
+            <button onClick="sessionStorage.setItem('isAnonymous', 'true'); document.location='home.html'" style="background-color: grey; border-color: black;" class="button center">Anonymous Login</button>
         </div>
     </div>
 </body>
